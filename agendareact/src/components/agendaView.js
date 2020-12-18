@@ -1,10 +1,12 @@
 import React from 'react'
+import ListItems from './listItems'
+
 
 function AgendaView(props){
    
     return (
         <div>
-            <h5>{props.agendaView}</h5>
+            <ListItems agenda={props.agenda}  handle_ContatoDelete={props.handle_ContatoDelete} handle_ChangeData={props.handle_ChangeData}/>
         </div>
         )
   }
